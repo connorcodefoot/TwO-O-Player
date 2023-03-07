@@ -1,7 +1,7 @@
 
 class Question
   
-  attr_accessor :number1, :number2, :question, :answer, :user_answer
+  attr_accessor :number1, :number2, :question, :answer
 
 
   def initialize
@@ -10,10 +10,6 @@ class Question
     @question = "What is #{self.number1} plus #{self.number2}?"
     @answer = self.number1 + self.number2
     puts self.question
-    @user_answer = gets.chomp
   end
-
-
-
 
 end

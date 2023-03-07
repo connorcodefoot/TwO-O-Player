@@ -1,4 +1,3 @@
-# Player class
 
 class Player
 
@@ -7,5 +6,4 @@ class Player
   def initialize
     @lives = 3
   end
-
 end

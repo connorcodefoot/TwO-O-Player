@@ -2,15 +2,31 @@
 # It requires the other files/gems that it needs
 
 require './game'
-require './player'
 require './round'
 require './question'
+require './player'
+
 
 def newGame
 
-  # Create a new game. When a new game is created, so to are players, the first round and the first question
-  gameObj = Game.new
+  player1 = Player.new
+  player2 = Player.new
+  game = Game.new
+
+  while player1.lives > 0 || player2.lives > 0
+
+    round = Round.new
+    question = Question.new
+
+
+  
+  end
 
 end
 
+
 newGame()
+
+
+
+
